@@ -107,15 +107,18 @@ class _StatsState extends State<Stats> {
                onRefresh: _refresh,
               child: SingleChildScrollView(
                 child: Container(
-                  child: DataTable(
-                    columns: <DataColumn>[
-                      DataColumn(
-                        label: Text('Województwo',style: columnText,)),
-                      DataColumn(label: Text('Zarażenia',style: columnText)
-                      ),
-                      DataColumn(label: Text('Zgony',style: columnText)),
-                    ],
-                    rows: rows
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                                      child: DataTable(
+                      columns: <DataColumn>[
+                        DataColumn(
+                          label: Text('Województwo',style: columnText,)),
+                        DataColumn(label: Text('Zarażenia',style: columnText)
+                        ),
+                        DataColumn(label: Text('Zgony',style: columnText)),
+                      ],
+                      rows: rows
+                    ),
                   ),
 
                 ),
