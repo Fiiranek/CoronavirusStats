@@ -80,7 +80,7 @@ class _StatsState extends State<Stats> {
           List<RegionStats> data = snapshot.data.regionsStatsList;
           List<DataRow> rows = [
             DataRow(cells: <DataCell>[
-              DataCell(Text('Łącznie',style: TextStyle(color: Colors.red[400]),)
+              DataCell(Text('Summary',style: TextStyle(color: Colors.red[400]),)
               ),
               DataCell(Text(snapshot.data.infected.toString(),style: TextStyle(color: Colors.red[400]),),),
               DataCell(Text(snapshot.data.deceased.toString(),style: TextStyle(color: Colors.red[400]),)),
@@ -111,10 +111,10 @@ class _StatsState extends State<Stats> {
                                       child: DataTable(
                       columns: <DataColumn>[
                         DataColumn(
-                          label: Text('Województwo',style: columnText,)),
-                        DataColumn(label: Text('Zarażenia',style: columnText)
+                          label: Text('Region',style: columnText,)),
+                        DataColumn(label: Text('Infected',style: columnText)
                         ),
-                        DataColumn(label: Text('Zgony',style: columnText)),
+                        DataColumn(label: Text('Deaths',style: columnText)),
                       ],
                       rows: rows
                     ),
