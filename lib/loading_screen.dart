@@ -16,7 +16,7 @@ class LoadingScreen extends StatelessWidget {
                 color:  Color(0xff2B5E80),
                 ),
                 SizedBox(height: 10,),
-                Text('#zostańwdomu',style: TextStyle(color: Color(0xff2B5E80),fontSize: 24),)
+                Text('#staysafe',style: TextStyle(color: Color(0xff2B5E80),fontSize: 24),)
               ],
             ),
           ),

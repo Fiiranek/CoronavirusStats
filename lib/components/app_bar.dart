@@ -15,7 +15,7 @@ AppBar appBar = AppBar(
                 children: <Widget>[
                   Image.asset('assets/virus.png',width: 45,),
                   SizedBox(width: 10,),
-                  Text('COVID-19 Polska',style: TextStyle(color: Colors.white),),
+                  Text('COVID-19 Stats',style: TextStyle(color: Colors.white),),
                 ],
               ),
             );

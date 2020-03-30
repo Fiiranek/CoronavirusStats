@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'package:coronavirus/components/app_bar.dart';
 import 'package:coronavirus/loading_screen.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -62,7 +61,7 @@ class _StatsState extends State<Stats> {
 
   Future<TotalStats> _refresh() {
   futureData = getData();
-  return getData();
+  return futureData;
   
 }
 
